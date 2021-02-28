@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item</title>
+</head>
+<body>
+<h3>
+    Товар: {{ item.name }}<br>
+    Количество: {{ item.quantity | default:"товар отсутствует" }}
+</h3>
+<a href="/items/">back-1</a>
+</body>
+</html>
